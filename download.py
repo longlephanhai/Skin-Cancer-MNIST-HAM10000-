@@ -1,6 +1,6 @@
 import kagglehub
 
 # Download latest version
-path = kagglehub.dataset_download("kmader/skin-cancer-mnist-ham10000")
+path = kagglehub.dataset_download("pacificrm/skindiseasedataset")
 
 print("Path to dataset files:", path)

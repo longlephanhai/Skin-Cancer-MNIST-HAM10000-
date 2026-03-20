@@ -57,6 +57,9 @@ class SkinDiseaseModel(nn.Module):
 if __name__ == "__main__":
     model = SkinDiseaseModel()
     input_data = torch.rand(8, 3, 224, 224)
+    if torch.cuda.is_available():
+        model.cuda()
+        input_data = input_data.cuda()
     while True:
         output = model(input_data)
         print(output.shape)

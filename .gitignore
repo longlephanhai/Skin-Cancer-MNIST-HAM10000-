@@ -1,1 +1,7 @@
 dataset
+__pycache__
+.vscode
+trained_models/
+*.pt
+*.pth
+.ipynb_checkpoints/
